@@ -1,0 +1,57 @@
+[data]
+set data in ~/data/gdbt/adult.data.csv
+
+
+
+
+
+{'loss': 'deviance', 'max_leaf_nodes': 20, 'learning_rate': 0.1, 'min_samples_leaf': 8, 'n_estimators': 1000, 'subsample': 0.1, 'random_state': 0, 'max_features': 5, 'max_depth': 2}
+Fitting 5 folds for each of 14 candidates, totalling 70 fits
+{'penalty': 'l2', 'C': 0.1}
+accuracy=8.54598e-01, precision=9.22937e-01, recall=8.89647e-01, f=9.05986e-01
+
+>>> X_train.shape
+(26049, 14)
+>>> X_test.shape
+(6513, 14)
+
+f = gzip.open("gbdt/encoding_tree_test_cv.pkl.gz")
+data = cPickle.load(f)
+f.close()
+
+[[transformated_train_features, y_train], [transformated_test_features, y_test]] = data
+>>> transformated_train_features.shape
+(26049, 766)
+>>> transformated_test_features.shape
+(6513, 766)
+
+
+# gbdt + logistic
+{'penalty': 'l1', 'C': 1}
+accuracy=7.59097e-01, precision=9.33252e-01, recall=7.88314e-01, f=8.54682e-01
+
+# logistic
+{'penalty': 'l1', 'C': 10.0}
+accuracy=7.58483e-01, precision=9.72087e-01, recall=7.70069e-01, f=8.59365e-01
+
+>>> base.head()
+   age          workclass   fnlwgt   education  education-num  \
+0  age          workclass   fnlwgt   education  education-num   
+1   39          State-gov    77516   Bachelors             13   
+2   50   Self-emp-not-inc    83311   Bachelors             13   
+3   38            Private   215646     HS-grad              9   
+4   53            Private   234721        11th              7   
+
+        marital-status          occupation    relationship    race    sex  \
+0       marital-status          occupation    relationship    race    sex   
+1        Never-married        Adm-clerical   Not-in-family   White   Male   
+2   Married-civ-spouse     Exec-managerial         Husband   White   Male   
+3             Divorced   Handlers-cleaners   Not-in-family   White   Male   
+4   Married-civ-spouse   Handlers-cleaners         Husband   Black   Male   
+
+   capital-gain  capital-loss  hours-per-week  native-country  income  
+0  capital-gain  capital-loss  hours-per-week  native-country   label  
+1          2174             0              40   United-States   <=50K  
+2             0             0              13   United-States   <=50K  
+3             0             0              40   United-States   <=50K  
+4             0             0              40   United-States   <=50K 
