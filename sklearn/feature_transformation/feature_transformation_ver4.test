@@ -1,0 +1,44 @@
+Fitting 2 folds for each of 1 candidates, totalling 2 fits
+[CV] loss=deviance, max_leaf_nodes=20, learning_rate=0.1, min_samples_leaf=8, n_estimators=1000, subsample=0.1, random_state=0, max_features=5, max_depth=2 
+[CV]  loss=deviance, max_leaf_nodes=20, learning_rate=0.1, min_samples_leaf=8, n_estimators=1000, subsample=0.1, random_state=0, max_features=5, max_depth=2, score=0.494253 -   0.6s
+[CV] loss=deviance, max_leaf_nodes=20, learning_rate=0.1, min_samples_leaf=8, n_estimators=1000, subsample=0.1, random_state=0, max_features=5, max_depth=2 
+[CV]  loss=deviance, max_leaf_nodes=20, learning_rate=0.1, min_samples_leaf=8, n_estimators=1000, subsample=0.1, random_state=0, max_features=5, max_depth=2, score=0.480447 -   0.6s
+[GBDT's Best Parameter] {'loss': 'deviance', 'max_leaf_nodes': 20, 'learning_rate': 0.1, 'min_samples_leaf': 8, 'n_estimators': 1000, 'subsample': 0.1, 'random_state': 0, 'max_features': 5, 'max_depth': 2}
+Fitting 2 folds for each of 4 candidates, totalling 8 fits
+[CV] penalty=l1, C=0.001 .............................................
+[CV] .................... penalty=l1, C=0.001, score=0.000000 -   0.0s
+[CV] penalty=l1, C=0.001 .............................................
+[CV] .................... penalty=l1, C=0.001, score=0.000000 -   0.0s
+[CV] penalty=l2, C=0.001 .............................................
+[CV] .................... penalty=l2, C=0.001, score=0.338983 -   0.1s
+[CV] penalty=l2, C=0.001 .............................................
+[CV] .................... penalty=l2, C=0.001, score=0.312500 -   0.1s
+[CV] penalty=l1, C=0.01 ..............................................
+[CV] ..................... penalty=l1, C=0.01, score=0.000000 -   0.0s
+[CV] penalty=l1, C=0.01 ..............................................
+[CV] ..................... penalty=l1, C=0.01, score=0.000000 -   0.0s
+[CV] penalty=l2, C=0.01 ..............................................
+[CV] ..................... penalty=l2, C=0.01, score=0.563758 -   0.1s
+[CV] penalty=l2, C=0.01 ..............................................
+[CV] ..................... penalty=l2, C=0.01, score=0.511905 -   0.1s
+[Logistic Regression's Best Parameter] {'penalty': 'l2', 'C': 0.01}
+accuracy=8.10945e-01, precision=9.05063e-01, recall=8.61446e-01, f=8.82716e-01
+Fitting 2 folds for each of 4 candidates, totalling 8 fits
+[CV] penalty=l2, loss=hinge, C=0.001, random_state=0, tol=0.001 ......
+[CV]  penalty=l2, loss=hinge, C=0.001, random_state=0, tol=0.001, score=0.020619 -   0.0s
+[CV] penalty=l2, loss=hinge, C=0.001, random_state=0, tol=0.001 ......
+[CV]  penalty=l2, loss=hinge, C=0.001, random_state=0, tol=0.001, score=0.000000 -   0.0s
+[CV] penalty=l2, loss=hinge, C=0.01, random_state=0, tol=0.001 .......
+[CV]  penalty=l2, loss=hinge, C=0.01, random_state=0, tol=0.001, score=0.354839 -   0.0s
+[CV] penalty=l2, loss=hinge, C=0.01, random_state=0, tol=0.001 .......
+[CV]  penalty=l2, loss=hinge, C=0.01, random_state=0, tol=0.001, score=0.000000 -   0.0s
+[CV] loss=squared_hinge, C=0.001, dual=False, penalty=l1, random_state=0, tol=0.001 
+[CV]  loss=squared_hinge, C=0.001, dual=False, penalty=l1, random_state=0, tol=0.001, score=0.000000 -   0.0s
+[CV] loss=squared_hinge, C=0.001, dual=False, penalty=l1, random_state=0, tol=0.001 
+[CV]  loss=squared_hinge, C=0.001, dual=False, penalty=l1, random_state=0, tol=0.001, score=0.000000 -   0.0s
+[CV] loss=squared_hinge, C=0.01, dual=False, penalty=l1, random_state=0, tol=0.001 
+[CV]  loss=squared_hinge, C=0.01, dual=False, penalty=l1, random_state=0, tol=0.001, score=0.020833 -   0.0s
+[CV] loss=squared_hinge, C=0.01, dual=False, penalty=l1, random_state=0, tol=0.001 
+[CV]  loss=squared_hinge, C=0.01, dual=False, penalty=l1, random_state=0, tol=0.001, score=0.096154 -   0.0s
+[SVM's Best Parameter] {'penalty': 'l2', 'loss': 'hinge', 'C': 0.01, 'random_state': 0, 'tol': 0.001}
+accuracy=7.91045e-01, precision=8.73418e-01, recall=8.62500e-01, f=8.67925e-01
