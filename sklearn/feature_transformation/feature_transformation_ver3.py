@@ -15,7 +15,10 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import classification_report
 from sklearn.metrics import precision_recall_curve
+<<<<<<< HEAD
 from sklearn.metrics import log_loss
+=======
+>>>>>>> a476ecf10868a68d67e3d992fef72bc4370722a8
 from sklearn import metrics
 
 from sklearn.base import BaseEstimator, TransformerMixin, clone
@@ -57,7 +60,11 @@ class TreeTransform(BaseEstimator, TransformerMixin):
                  n_jobs, cv_k_fold, parameters,
                  X_train, y_train,
                  X_test, y_test):
+<<<<<<< HEAD
         # estimator : ensemble学習器
+=======
+        # estimator : ensemble蟄ｦ鄙貞勣
+>>>>>>> a476ecf10868a68d67e3d992fef72bc4370722a8
 
         # cv : if train : get best parameter
         if phase == "train":
@@ -113,11 +120,19 @@ class TreeTransform(BaseEstimator, TransformerMixin):
         self.binarizers_ = []
         sparse_applications = []
         # --- np.asarray() ---
+<<<<<<< HEAD
         # array()と同様．ただし引数がndarrayの場合，コピーでなく引数そのものを返す
         # np.asarray([1,2,3])
         # >array([1, 2, 3])
         # a = np.array([1,2])
         # b = np.asarray(a)# ndarrayを引数とするため，b = aと同値
+=======
+        # array()縺ｨ蜷梧ｧ假ｼ弱◆縺�縺怜ｼ墓焚縺系darray縺ｮ蝣ｴ蜷茨ｼ後さ繝斐�縺ｧ縺ｪ縺丞ｼ墓焚縺昴�繧ゅ�繧定ｿ斐☆
+        # np.asarray([1,2,3])
+        # >array([1, 2, 3])
+        # a = np.array([1,2])
+        # b = np.asarray(a)# ndarray繧貞ｼ墓焚縺ｨ縺吶ｋ縺溘ａ�恵 = a縺ｨ蜷悟､
+>>>>>>> a476ecf10868a68d67e3d992fef72bc4370722a8
         # array([1, 2])
         # --- np.ravel() ---
         # It is equivalent to reshape(-1, order=order).
